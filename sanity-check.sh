@@ -2,7 +2,7 @@
 
 tmp_rbenv_chef_workstation="${GEM_ROOT} qQq ${GEM_HOME} qQq ${GEM_PATH}"
 
-eval "$(/opt/chef-workstation/bin/chef shell-init sh)"
+eval "$(/opt/cinc-workstation/bin/chef shell-init sh)"
 
 if [ "${tmp_rbenv_chef_workstation}" = "${GEM_ROOT} qQq ${GEM_HOME} qQq ${GEM_PATH}" ]; then
   echo "ERROR: You have previously run 'chef shell-init'." 1>&2
